@@ -14,12 +14,60 @@
     </header>
 
     <main>
+        <h2>Formulario Firebase Firestore</h2>
+        <section>
+            <form id="form-firebase-firestore">
 
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name">
+    
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+    
+                <label for="message">Mensaje: </label>
+                <textarea id="message" name="message"></textarea>
+    
+                <label for="image">Imagen: </label>
+                <input type="text" id="image" name="image">
+    
+                <input type="submit" value="Submit">
+    
+            </form>
+        </section>
+
+        <section id="buttons-container">
+            <button id="button-delete-all">Eliminar Todos</button>
+            <form id="form-delete"><input type="text" id="idContact" name="idContact" placeholder="Introduce name a deletiar"><input type="submit" value="Submit"></form>
+        </section>
+
+        <section id="show-contacts">
+            <table id="table-contacts" name="table-contacts">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Mensaje</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="table-contacts-body">
+                   
+                </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
 
     <script src="../js/scripts.js"></script>
 </body>
