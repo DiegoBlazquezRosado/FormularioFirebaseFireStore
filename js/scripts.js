@@ -14,7 +14,7 @@ const firebaseConfig = {
     appId: "1:292979044108:web:317330129262bdbb82e329"
 }
 
-firebase.initializeApp(firebaseConfig); //Inicializar app Firebase
+firebase.initializeApp(firebaseConfig); // Inicializar app Firebase
 
 const db = firebase.firestore(); //db representa mi BBDD //Inicia Firestore
 
@@ -96,7 +96,7 @@ const deleteAllContacts = () => {
             });
         });
 }
-
+ 
 const deleteConcrete = (idContact) => {
     // const id = prompt('Introduce el ID a borrar');
     db.collection('contacts').doc(idContact).delete().then(() => {
